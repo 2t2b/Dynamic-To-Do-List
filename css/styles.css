@@ -12,10 +12,10 @@ body {
 
 h1 {
     padding: 15px;
-    animation: colorChange 3s infinite alternate;
+    animation: change 3s infinite alternate;
 }
 
-@keyframes colorChange {
+@keyframes change {
   0%   { color: red; }
   50%  { color: blue; }
   100% { color: green; }
@@ -86,6 +86,7 @@ button:hover {
 
 button:active {
      transform: scale(0.95) translateY(3px);
+     background: #5dade2;
 } 
 
 #taskList button:hover {
@@ -97,6 +98,7 @@ button:active {
 
 #taskList button:active {
      transform: scale(0.95) translateY(3px);
+     background: #FF7276;
 } 
 
 @media (max-width: 768px) {
