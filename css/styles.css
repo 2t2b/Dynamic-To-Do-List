@@ -28,6 +28,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: border-color 0.3s ease;
 }
 
 li {
@@ -36,7 +37,7 @@ li {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -97,3 +98,31 @@ button:active {
 #taskList button:active {
      transform: scale(0.95) translateY(3px);
 } 
+
+@media (max-width: 768px) {
+    li {
+        width: 90%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        width: 90%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
